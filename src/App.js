@@ -1,11 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Routes from "./routers/routes"
 
 function App() {
   return (
-      <header>
+      <div>
+        <header>
         <h1 className='title'>🎬 Peliculas</h1>
       </header>
+      <Routes/> 
+      </div>
+      
   );
 }
 
