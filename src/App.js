@@ -1,5 +1,5 @@
 import './App.css';
-import Routes from "./routers/routes"
+import { MyRoutes } from './routers/routes';
 
 function App() {
   return (
@@ -7,9 +7,8 @@ function App() {
         <header>
         <h1 className='title'>🎬 Peliculas</h1>
       </header>
-      <Routes/> 
+      <MyRoutes/> 
       </div>
-      
   );
 }
 
