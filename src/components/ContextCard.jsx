@@ -1,5 +1,21 @@
+import { useEffect, useState } from "react";
+import { get } from "../data/httpClient";
+import { MovieCard } from "../components/MovieCard";
+
 export function ContextCard(){
+    const [movies, SetMovies] = useState([]);
+    useEffect(() => {
+        get("/discover/movie").then((data) => {
+            SetMovies(data.results);
+            console.log(data)
+        });
+    }, []);
+
     return(
-        <h1>Context Movie Card</h1>
-    )
+        <ul>
+            {movies.map((movie) => (
+                <MovieCard/>
+            ))}
+        </ul>
+    );
 }
