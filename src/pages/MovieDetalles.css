@@ -1,0 +1,45 @@
+.detallesContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.movieImage{
+    border-radius: 50px;
+    margin: 0;
+    
+    padding: 0;
+}
+
+.movieDetalles{
+    text-align: justify;
+    margin: 0;
+}
+
+.col{
+    max-width: 460px;
+    margin: 15px;
+    height: auto;
+    width: 80%;    
+}
+
+.titulo{
+    margin-top: 0;
+    text-align: center;
+}
+
+.item{
+    color:dimgrey;
+    display:grid;
+}
+
+h2{
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+p{
+    color: black;
+    padding-bottom: 40px;
+    margin:0;
+}
