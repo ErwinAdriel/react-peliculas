@@ -27,12 +27,20 @@ export function MovieDetalles(){
                     <h1>{movie.title}</h1>
                 </div>
                 <div className="item">
-                    <h2>Genero</h2>
+                    <h3>Fecha de lanzamiento</h3>
+                    <p>{movie.release_date}</p>
+                </div>
+                <div className="item">
+                    <h3>Duración</h3>
+                    <p>{movie.runtime} min</p>
+                </div>
+                <div className="item">
+                    <h3>Género</h3>
                     <p>{generos.name}</p>
                 </div>
                 <hr></hr>
                 <div className="item">
-                    <h2>Sinopsis</h2>
+                    <h3>Sinopsis</h3>
                     <p>{movie.overview}</p>
                 </div>
             </div>
